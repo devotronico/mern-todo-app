@@ -30,7 +30,7 @@ export default function TodoList(): JSX.Element {
     <ul>
       {todos.map((todo) => (
         <TodoListItem
-          key={todo.id}
+          key={todo._id}
           {...todo}
           onClick={() => dispatch(toggleTodo(todo))}
         />

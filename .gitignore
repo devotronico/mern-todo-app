@@ -1,0 +1,25 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+
+## COMMON [ROOT-FRONTEND-BACKEND]
+node_modules/
+
+### IGNORA TUTTI I FILE JSON TRANNE IL FILE PACKAGE.JSON
+*.json
+!package.json
+
+### IGNORA TUTTI I FILE E CARTELLE CHE INIZIANO COL CARATTERE "." TRANNE IL FILE GITIGNORE NELLA ROOT
+.*
+!/.gitignore
+
+### FRONTEND
+*.log*
+bundle.js
+
+public/
+coverage/
+build/
+dist/
+
+
+### BACKEND

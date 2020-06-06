@@ -24,10 +24,12 @@ app.use(cors());
  * parametro 1:api url. es: http://localhost:5000/api/users
  * parametro 2:percorso file del codice che gestisce la logica
  */
-app.use('/api/users', require('./routes/api/users'));
-app.use('/api/auth', require('./routes/api/auth'));
-app.use('/api/profile', require('./routes/api/profile'));
-app.use('/api/logs', require('./routes/api/logs'));
+app.use('/api/todo', require('./routes/api/todo'));
+app.use('/api/todos', require('./routes/api/todos'));
+// app.use('/api/users', require('./routes/api/users'));
+// app.use('/api/auth', require('./routes/api/auth'));
+// app.use('/api/profile', require('./routes/api/profile'));
+// app.use('/api/logs', require('./routes/api/logs'));
 // app.use('/api/posts', require('./routes/api/posts'));
 
 // Serve static assets in production
